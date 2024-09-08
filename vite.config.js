@@ -28,6 +28,7 @@ export default defineConfig({
     },
     build: {
         target: 'esnext'
-    }
+    },
+    base:"/",
 });
 //# sourceMappingURL=vite.config.js.map

@@ -15,7 +15,7 @@ function App() {
         React.createElement(Web3AuthProvider, { config: web3AuthContextConfig },
             React.createElement(WalletServicesProvider, { context: Web3AuthInnerContext },
                 React.createElement(Playground, null,
-                    React.createElement(BrowserRouter, null,
+                    React.createElement(BrowserRouter, { basename: "/" },
                         React.createElement(Routes, null,
                             React.createElement(Route, { path: "/" },
                                 React.createElement(Route, { index: true, element: React.createElement(HomePage, null) }),
