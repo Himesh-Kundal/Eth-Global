@@ -19,7 +19,7 @@ function App() {
       <Web3AuthProvider config={web3AuthContextConfig}>
         <WalletServicesProvider context={Web3AuthInnerContext}>
           <Playground>
-            <BrowserRouter basename={import.meta.env.BASE_URL}>
+            <BrowserRouter>
               <Routes>
                 <Route path="/">
                   <Route index element={<HomePage />} />
